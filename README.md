@@ -1,7 +1,7 @@
 # LizardWizards
 SRE 2022 Capstone Project
 
-place terraform-azure.pem and terraform-azure.pub into a folder named ssh-keys in the same folder as the terraform files
+place terraform-azure.pem and terraform-azure.pub into a folder (that you need to create) named "ssh-keys" in the same folder level as the terraform files
 
 
 before running the terraform files, make a resource group named "capstone-rg"
