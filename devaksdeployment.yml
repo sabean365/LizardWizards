@@ -11,12 +11,12 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'f6012ce4-0b51-4e5e-8ea1-aba03b2cf9ab'
+  dockerRegistryServiceConnection: $(dockerRegistryServiceConnection)
   imageRepository: 'capstone'
   containerRegistry: 'lizardwizards.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'capstone-project-spring/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'lizardwizards1040f1c9-auth'
+  imagePullSecret: $(imagePullSecret)
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -63,7 +63,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'sabean365LizardWizards.dev'
+    environment: 'sabean365/LizardWizards.dev'
     strategy:
       runOnce:
         deploy:
