@@ -1,0 +1,9 @@
+com\cognixia\capstoneproject\CapstoneProjectApplication.class
+com\cognixia\capstoneproject\services\IntegerToRomanConversionService.class
+com\cognixia\capstoneproject\controller\IntegerToRomanConversionController.class
+com\cognixia\capstoneproject\exceptions\InputOutOfRangeException.class
+com\cognixia\capstoneproject\controller\HealthCheckController.class
+com\cognixia\capstoneproject\exceptionhandlers\InputOutOfRangeExceptionHandler.class
+com\cognixia\capstoneproject\services\ConversionService.class
+com\cognixia\capstoneproject\models\ConversionResult.class
+com\cognixia\capstoneproject\controller\VersionController.class
