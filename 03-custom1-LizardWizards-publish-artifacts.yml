@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '50e8173b-2632-4920-994f-254ad69fa826'
   imageRepository: 'lizardwizardscustom'
   containerRegistry: 'lizardwizards.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  dockerfilePath: 'capstone-project-spring/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
