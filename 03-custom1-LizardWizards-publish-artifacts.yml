@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '50e8173b-2632-4920-994f-254ad69fa826'
-  imageRepository: 'lizardwizardscustom'
+  imageRepository: 'capstone'
   containerRegistry: 'lizardwizards.azurecr.io'
   dockerfilePath: 'capstone-project-spring/Dockerfile'
   tag: '$(Build.BuildId)'
@@ -29,16 +29,6 @@ stages:
       vmImage: $(vmImageName)
     steps:
     
-    - task: Maven@3
-      inputs:
-        mavenPomFile: 'capstone-project-spring/pom.xml'
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        javaHomeOption: 'JDKVersion'
-        mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
-        effectivePomSkip: false
-        sonarQubeRunAnalysis: false
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
