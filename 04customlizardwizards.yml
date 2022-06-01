@@ -37,7 +37,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'LizardWizards'
-        repository: 'custom2capstone'
+        repository: 'capstone'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
