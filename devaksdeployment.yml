@@ -63,7 +63,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'sabean365/LizardWizards.dev'
+    environment: 'sabean365LizardWizards.dev'
     strategy:
       runOnce:
         deploy:
