@@ -34,6 +34,8 @@ terraform validate
 terraform plan -out tfplan.out
 terraform apply tfplan.out
 
+#### Note: The files in this repo will not work without ssh keys. They have been removed from the project for security reasons. If you wish to clone and run the terraform files, you will have to create your own public and private ssh keys and place them in the ssh-keys folder. To do this, you can run the command ssh-keygen -t rsa from a command line. For more detailed information about ssh key pairs, visit https://www.ssh.com/academy/ssh/keygen.
+
 Now that the cluster has been created in azure you will need to login to the cluster:
 az aks get-credentials --resource-group aks-rg3 --name aks-cluster
 
